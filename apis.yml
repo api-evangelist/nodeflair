@@ -1,7 +1,26 @@
 aid: nodeflair
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/nodeflair.png
 name: NodeFlair
-description: NodeFlair is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: NodeFlair is a Singapore-based technology career-transparency platform,
+  founded in 2018 by Ethan Ang, that gives Asia's tech talent access to verified salary
+  data, company reviews, tech-stack insights, benefits, and job listings across the
+  APAC region. Salaries are verified against actual employee payslips, differentiating
+  NodeFlair from other job boards, and the platform serves over 500,000 monthly visitors
+  across eight Asian countries while helping companies hire tech talent. It was surfaced
+  as a portfolio company of 500 Global and added to the API Evangelist network. No
+  public developer API surface was found during enrichment; the profile currently
+  carries live domain-security posture only.
 url: https://raw.githubusercontent.com/api-evangelist/nodeflair/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Jobs
+- Recruiting
+- Salaries
+- Career
+- Tech Talent
+- Southeast Asia
+- Singapore
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +47,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/nodeflair-domain-security.yml
 - type: Website
   url: https://nodeflair.com
+- type: JobListings
+  url: https://nodeflair.com/jobs
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
